@@ -63,7 +63,7 @@ class Var:
 
     # An Addition word checking filters.
     MUST_INCLUDE = config("MUST_INCLUDE", default=None)
-    EXCLUDE = config("EXCLUDE_WORDS", default=None)
+    EXCLUDE = config("MUST_EXCLUDE", default=None)
     if EXCLUDE:
         EXCLUDE = EXCLUDE.split("|")
 
